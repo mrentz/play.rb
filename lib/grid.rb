@@ -1,6 +1,6 @@
-require 'colorize' 
+require 'colorize'  
 
-class Grid
+class  Grid
 
   attr_accessor :grid_size_x, :grid_size_y, :position, :grid_pattern
 

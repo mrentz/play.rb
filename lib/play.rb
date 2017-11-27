@@ -31,7 +31,7 @@ end
 
 puts "choose your favourite background"
 grid_pattern = $stdin.getch
-puts "this is #{grid_pattern}"
+puts "#{grid_pattern} will be used as the background fill character"
 
 while not input == ' ' # spacebar to quit 
   input = $stdin.getch
