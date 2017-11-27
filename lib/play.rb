@@ -16,7 +16,6 @@ def move(direction)
     @x_position = locate(@x_position, 'down')
   when 'right'
     @x_position = locate(@x_position, 'up')
-  else
   end
 end
 
@@ -29,9 +28,13 @@ def iterate(direction, position)
   direction == 'up' ? position +=1 : position -= 1
 end
 
-puts "choose your favourite background"
-grid_pattern = $stdin.getch
-puts "#{grid_pattern} will be used as the background fill character"
+puts "choose any key for the background"
+response = $stdin.getch
+response == "\r" ? grid_pattern = ' ' : grid_pattern = response 
+puts "Use the keys centered around 's' to move around and <space bar> to quit"
+puts "press any key to continue"
+puts "Enjoy!"
+
 
 while not input == ' ' # spacebar to quit 
   input = $stdin.getch
